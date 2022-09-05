@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🗺 Booking Form/central zoo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        hr{
+            opacity: 100% !important;
+            padding: 0.5px;
+            background-color: white;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- nav bar -->
+    <div class="container-fluid" id="navbar-booking">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div id="nav-logo">
+                    <a href="Home.html"><img src="assets/images/Logo.png" id="logo"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
+                    aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto" id="sample">
+                        <li class="nav-item"><a href="Home.html" class="nav-link text-dark">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link text-dark">About us</a></li>
+                        <li class="nav-item"><a href="booking.html" class="nav-link text-dark">Booking</a><hr></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Category
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="fish.html">Fish</a></li>
+                        
+                              <li><a class="dropdown-item" href="birds.html">Birds</a></li>
+                              <li><a class="dropdown-item" href="mammals.html">Mammals</a></li>
+                              <li><a class="dropdown-item" href="raptiles.html">Raptiles</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item"><a href="animals.html" class="nav-link text-dark">Animals</a></li>
+                        <li class="nav-item"><a href="contact us.html" class="nav-link text-dark">Directions &
+                                Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!--ticket pricing -->
+    <div class="container-fluid mt-5 mb-3 pt-5 ">
+        <div class="container" id="ticket">
+            <h1 class="h1 text-center" style="color:#a09833;">Ticket Pricing</h1>
+            <p class="paragraph">These ticket prices are only for the year 2022. new price list will be updated after 10
+                jan of 2023.</p>
+            <div class="table mt-5">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Ticket-Type</th>
+                            <th scope="col">Price For Local's</th>
+                            <th scope="col">Price For Foreigner's</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Children (Under 5)</td>
+                            <td>FREE</td>
+                            <td>FREE</td>
+                        </tr>
+                        <tr>
+                            <td>Children (5-18)</td>
+                            <td>Rs:50</td>
+                            <td>Rs:100</td>
+                        </tr>
+                        <tr>
+                            <td>Adult (18-Above)</td>
+                            <td>Rs:200</td>
+                            <td>Rs:400</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- timings -->
+
+    <div class="container-fluid  mt-5 mb-5 pt-5 pb-5 bg-white" id="timing">
+        <div class="container pt-5 pb-5">
+            <h1 class="h1 text-center">Timings</h1>
+            <p class="paragraph">
+                The zoo is oppen all seven days of the week in the timming of 10:00 Am to 10:00 Pm.Only on Friday
+                special Timings will be followed 10:00 Am to 12:00 Pm (break for friday prayer) 3:00 Pm to 10:00 Pm.
+                Last enrty time is one hour before closing.
+            </p>
+
+        </div>
+    </div>
+
+    <!-- booking form -->
+    <div class="container" id="booking">
+        <h1 class="h1 text-center">Book Tickets</h1>
+    </div>
+
+    <div class="container-fluid  mt-5 pt-5 pb-5" id="booking-section">
+        <div class="container">
+
+            <p class="paragraph" style="text-align:left;">Fill up the form to book your entry passes</p>
+            <div class="row" id="booking-section">
+                <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                    <div class="booking-form">
+                        <form>
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" class="form-control" required>
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" class="form-control" required>
+                            <label for="contact">Contact</label>
+                            <input type="number" name="contact" id="contact-num" class="form-control" required>
+                            <label for="tickets">Number of Tickets</label>
+                            <br>
+                            <label for="tickets">Childs</label>
+                            <input type="number" name="tickets" id="child_tickets" class="form-control" required
+                                style=width:30%;>
+                            <label for="tickets">Adults</label>
+                            <input type="number" name="tickets" id="adult_tickets" class="form-control" required
+                                style=width:30%;>
+                            <label for="date">Booking Date</label>
+                            <input type="date" name="date" id="date" class="form-control" required>
+
+                            <button class="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                onclick="demo()" type="button">Send</button>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                    <h2>Things To Remember</h2>
+                    <p class="paragraph">Following are the things you should remember for booking your tickets.</p>
+                    <ul>
+                        <li>Always remember to give correct information while booking</li>
+                        <li>Always cheack the date of the tickets you are booking</li>
+                        <li>Please save the ticket number after the booking confarmation of your tickets</li>
+                        <li>Avail upto 40% discount on a group on 10 or more.</li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <!-- booking pa show hony wala modal -->
+
+
+    <div class="conatiner" id="modal">
+        <!-- is ka kam js ma hua ha -->
+    </div>
+
+
+
+
+
+
+
+    <!-- footer -->
+    <div class="container-fluid pt-5" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3 col-md-3 col-sm-12">
+                    <div class="f-logo">
+                        <img src="assets/images/Logo.png" alt="logo">
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3 col-md-3 col-sm-12">
+                    <div class="f-title">
+                        <h4>Useful links</h4>
+                        <a href="Home.html">Home</a>
+                        <a href="about.html"> About us</a>
+                        <a href="booking.html"> Booking</a>
+                        <a href="animals.html"> Animals</a>
+                        <a href="contact us.html"> Contact us</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3 col-md-3 col-sm-12">
+                    <div class="f-title">
+                        <h4>Other Refrances</h4>
+                        <a href="about.html#eventsec">Family Entertainment</a>
+                        <a href="booking.html">Tickets Info</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3 col-md-3 col-sm-12">
+                    <div class="f-title">
+                        <h4>Visitors Feedback</h4>
+                        <a href="contact us.html#faq">FAQ's</a>
+                        <a href="contact us.html#contact">Complaints</a>
+                        <a href="contact us.html#Feeedback">Share Your Experiance</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <p class="text-center"> Come visit: Nishtar Road, Garden East, Millat Nagar, Karachi. <br>
+                        Central_Zoo_Managment@gmail.com <br> call us on: 021-111-674-736 <br> Central Zoo.com
+                        copyrights
+                        2022 All rights resarved.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="js/bookingpage.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</html>

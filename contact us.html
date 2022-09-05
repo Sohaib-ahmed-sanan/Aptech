@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📞 Contact/central zoo</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        hr{
+            opacity: 100% !important;
+            padding: 0.5px;
+            background-color: white;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <div class="container-fluid" id="navbar">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div id="nav-logo">
+                    <a href="Home.html"><img src="assets/images/Logo.png"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
+                    aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="Home.html" class="nav-link text-dark">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link text-dark">About us</a></li>
+                        <li class="nav-item"><a href="booking.html" class="nav-link text-dark">Booking</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Category
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="fish.html">Fish</a></li>
+                        
+                              <li><a class="dropdown-item" href="birds.html">Birds</a></li>
+                              <li><a class="dropdown-item" href="mammals.html">Mammals</a></li>
+                              <li><a class="dropdown-item" href="raptiles.html">Raptiles</a></li>
+                            </ul>
+                          </li>
+                        <li class="nav-item"><a href="animals.html" class="nav-link text-dark">Animals</a></li>
+                        <li class="nav-item"><a href="contact us.html" class="nav-link text-dark">Directions &
+                                Contact</a><hr></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- map  -->
+    <div class="container mt-4">
+        <div class="row ">
+            <div class="col-12 col-md-12 col-lg-12 col-sm-12 ">
+                <h1 class="h1 mt-5">Our Location</h1>
+                <div id="address " class="pt-3">
+                    <p class="paragraph">This tourist attraction is located at an ideal spot in the heart of the
+                        city,
+                        making it easily accessible from all areas of Karachi.
+                    </p>
+                </div>
+                <div id="map-div" class="pt-3">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122844.92364661084!2d67.09654155419454!3d24.87795538286124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e40a674f1a3%3A0x87cf9326e9f15f6a!2sKarachi%20Zoo!5e0!3m2!1sen!2s!4v1658600569426!5m2!1sen!2s"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- details -->
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                <div class="description">
+                    <h4>Address</h4>
+
+                    <p><span class="contact-icons"><i class="fa-solid fa-location-dot"></i></span> Come visit today
+                        at : Nishtar Road, Garden East, Millat Nagar, Karachi.</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                <div class="description">
+                    <h4>E-mail</h4>
+                    <p><span class="contact-icons"><i class="fa-solid fa-envelope-circle-check"></i></span> Send us
+                        e-mail at Central_Zoo_Managment@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                <div class="description">
+                    <h4>For Any Queries</h4>
+                    <p>
+                        <span class="contact-icons"><i class="fa-solid fa-phone"></i></span> Call us on -
+                        021-111-674-736
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- contact form -->
+
+    <div class="container">
+        <h1 class="h1">Contact</h1>
+        <p class="paragraph">You can contact with us by simply filling up this form.</p>
+        <div class="row mt-4 mb-5">
+            <div class="col-12 col-lg-12 col-md-12 col-sm-12">
+                <div class="form">
+                    <form>
+                        <label>Full Name</label>
+                        <input type="text" class="form-control" placeholder="Enter Your Name" id="name" required>
+                        <label>Enter Your E-mail</label>
+                        <input type="email" class="form-control" placeholder="Enter E-mail" id="email" required>
+                        <label>Enter Your Contact Number</label>
+                        <input type="number" class="form-control" placeholder="Contact number" id="number" required>
+                        <label>Describe Your Problem</label>
+                        <textarea name="" id="" cols="70" rows="5" class="form-control" id="problem"></textarea>
+
+
+                        <label>Visitors Type</label>
+                        <br>
+                        <label>Local</label>
+                        <input type="radio" name="Visitors Type">
+
+                        <label>Foreigner</label>
+                        <input type="radio" name="Visitors Type">
+                        <br>
+                        <button type="submit" class="button" onclick="main_arr()">Send</button>
+                    </form>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- feed back -->
+    <div class="container-fluid mb-5 pb-5" id="Feeedback">
+        <div class="container">
+            <h1 class="h1 text-center">Visitor's Feedback</h1>
+            <p class="paragraph">
+                Dear visitors your feedback is very valuable for us, kindly share your experiance of visiting the
+                Central zoo.
+            </p>
+            <div class="feedback">
+                <label for="feedback">Visitor's Feedback</label>
+                <textarea name="feedback" class="form-control" cols="50" rows="5"
+                    placeholder="Give us your feedback ...." id="feedback"></textarea>
+                <button type="submit" onclick="feedback()">Send</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FAQ section -->
+
+
+    <div class="container-fluid p-5" id="faq">
+        <div class="container">
+            <h1 class="h1">FAQ</h1>
+
+            <div class="faq">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                What time does the zoo open & close?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p class="faqpara">The zoo is open all seven days of the weak at 11:00 Am to 11:00 Pm.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                What is the last entry time?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p class="faqpara"> The last timing of entry is one hour before Closing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Where can I park my car?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p class="faqpara">Parking is available on Mall Road gate, however a small parking is also available at Lawrence Gate. We are unable to cater large number of vehicles, so the parking gets closed when it is full. We apologise for any inconvenience this may cause and thank you in advance for your patience. </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                Can I feed any of the animals?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p class="faqpara">All of our animals are fed diets which are specifically designed for their needs. We therefore do not allow members of the public to feed our animals.</p>
+                            </div>
+                        </div>
+
+                    </div> 
+                    
+                    
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
+                                Can I hire wheelchairs?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <p class="faqpara">Yes, wheelchairs are available at Lahore Zoo on a first come, first served, basis. You have to submit your original CNIC and can have the wheel chair, CNIC will be returned at the end of the visit when you handover the wheelchair at gate. Both gates have the facility.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <div class="container-fluid pt-5" id="footer">
+        <div class="container" data-aos="zoom-in-down">
+            <div class="row">
+                <div class="col-12 col-lg-3 col-md-3 col-sm-12">
+                    <div class="f-logo">
+                        <img src="assets/images/Logo.png" alt="logo">
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3 col-md-3 col-sm-12">
+                    <div class="f-title">
+                        <h4>Useful links</h4>
+                        <a href="Home.html">Home</a>
+                        <a href="about.html"> About us</a>
+                        <a href="booking.html"> Booking</a>
+                        <a href="animals.html"> Animals</a>
+                        <a href="contact us.html">Directions & Contact</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3 col-md-3 col-sm-12">
+                    <div class="f-title">
+                        <h4>Other Refrances</h4>
+                        <a href="about.html#eventsec">Family Entertainment</a>
+                        <a href="booking.html">Tickets Info</a>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-3 col-md-3 col-sm-12">
+                    <div class="f-title">
+                        <h4>Visitors Feedback</h4>
+                        <a href="#faq">FAQ's</a>
+                        <a href="contact us.html#contact">Complaints</a>
+                        <a href="contact us.html#Feeedback">Share Your Experiance</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <p class="text-center"> Come visit: Nishtar Road, Garden East, Millat Nagar, Karachi. <br>
+                        Central_Zoo_Managment@gmail.com <br> call us on: 021-111-674-736 <br> Central Zoo.com copyrights
+                        2022 All rights resarved.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/contact page.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 300,
+        duration: 1000
+    });
+</script>
+
+</html>
